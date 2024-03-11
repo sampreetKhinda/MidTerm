@@ -9,6 +9,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var messageLabel: UILabel!
+    @IBOutlet weak var inputCityText: UITextField!
     var cityImages: [String: UIImage] = [
             "Toronto": UIImage(named: "Toronto.png") ?? UIImage(),
             "Calgary": UIImage(named: "Calgary.png") ?? UIImage(),
@@ -37,16 +39,17 @@ class ViewController: UIViewController {
 
         }
 
-    @IBOutlet weak var inputCityText: UITextField!
+   
     
     @IBAction func findCity(_ sender: Any) {
         let city = cityImages[inputCityText.text!]
         if let city = city {
             // Do something with the Toronto image
             print("city image found")
+            messageLabel.text = ""
             cityImageView.image = city
         } else {
-            print("city image not found")
+            messageLabel.text = "city image not found"
         }
     }
     //Calls this function when the tap is recognized.
