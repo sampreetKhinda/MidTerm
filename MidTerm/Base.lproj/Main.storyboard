@@ -12,7 +12,7 @@
         <!--Canada-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MidTerm" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Sampreet_Singh_MT_8963607" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -99,7 +99,7 @@
         <!--Calculation View Controller-->
         <scene sceneID="lYY-su-4Ad">
             <objects>
-                <viewController storyboardIdentifier="CalculationViewController" id="ceK-52-z7T" customClass="CalculationViewController" customModule="MidTerm" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CalculationViewController" id="ceK-52-z7T" customClass="CalculationViewController" customModule="Sampreet_Singh_MT_8963607" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="krv-M8-LSP">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -287,7 +287,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bqb-LY-Do8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="152" y="852"/>
+            <point key="canvasLocation" x="224" y="851"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ajz-EN-Mta">
@@ -486,7 +486,7 @@
         <!--Lab2 View Controller-->
         <scene sceneID="VAf-sy-xGJ">
             <objects>
-                <viewController storyboardIdentifier="Lab2ViewController" id="aTv-9H-SuA" customClass="Lab2ViewController" customModule="MidTerm" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Lab2ViewController" id="aTv-9H-SuA" customClass="Lab2ViewController" customModule="Sampreet_Singh_MT_8963607" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8jQ-dO-FIf">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -656,7 +656,7 @@
         <!--Lab3 View Controller-->
         <scene sceneID="3j1-3u-tTk">
             <objects>
-                <viewController storyboardIdentifier="Lab3ViewController" id="sGI-vp-msx" customClass="Lab3ViewController" customModule="MidTerm" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Lab3ViewController" id="sGI-vp-msx" customClass="Lab3ViewController" customModule="Sampreet_Singh_MT_8963607" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hDt-xG-rj2">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
