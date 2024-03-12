@@ -14,24 +14,29 @@ class CalculationViewController: UIViewController {
     @IBOutlet weak var inputTextB: UITextField!
     @IBOutlet weak var xValueLabel: UILabel!
     @IBOutlet weak var inputTextC: UITextField!
+    
+    
     override func viewDidLoad() {
 
-            super.viewDidLoad()
+        super.viewDidLoad()
+        let backButton = UIBarButtonItem()
+        backButton.title = "Quadratic Function"
+        self.navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
 
             // Do any additional setup after loading the view.
 
             //Looks for single or multiple taps.
 
-                let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+        let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
 
                //Uncomment the line below if you want the tap not not interfere and cancel other interactions.
 
-               tap.cancelsTouchesInView = false
+        tap.cancelsTouchesInView = false
 
-               view.addGestureRecognizer(tap)
-
-        }
-
+        view.addGestureRecognizer(tap)
+    }
+    
+    // Function to call quadratic equation after validating values
     @IBAction func calculateBtn(_ sender: Any) {
         if let aValue = Double(inputTextA.text!) {
             if let bValue = Double(inputTextB.text!) {
@@ -67,7 +72,23 @@ class CalculationViewController: UIViewController {
         inputTextC.text = ""
         messageLabel.text = ""
         xValueLabel.text = ""
+        // Show dialog
+        showAlert()
     }
+    // Function to show the alert dialog
+        func showAlert() {
+            // Create an alert controller
+            let alertController = UIAlertController(title: "Alert", message: "Enter a value for A and B to find C", preferredStyle: .alert)
+            
+            // Create an action for the alert
+            let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+            
+            // Add the action to the alert controller
+            alertController.addAction(okAction)
+            
+            // Present the alert controller
+            present(alertController, animated: true, completion: nil)
+        }
     //Calls this function when the tap is recognized.
 
         @objc func dismissKeyboard() {
